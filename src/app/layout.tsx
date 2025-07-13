@@ -21,8 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        style={{ fontFamily: "var(--font-terminal)" }}
-        className="antialiased bg-neutral-900 text-neutral-100"
+        className={`${shareTechMono.variable} font-terminal antialiased bg-neutral-900 text-neutral-100`}
       >
         {children}
       </body>
