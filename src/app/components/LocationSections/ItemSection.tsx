@@ -20,7 +20,7 @@ export const ItemSection = ({ itemType, items }: ItemSectionProps) => {
   return (
     <div>
       <h3 className="pb-1 text-lg">{renderedItem}</h3>
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid gap-4 md:grid-cols-3">
         {items.map((item, idx) => (
           <Item key={idx} {...item} />
         ))}
