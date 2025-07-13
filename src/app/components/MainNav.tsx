@@ -1,20 +1,5 @@
 import Link from "next/link";
-
-const navLinks = [
-  {
-    title: "Dashboard Ops",
-    href: "/",
-  },
-
-  {
-    title: "COAs",
-    href: "/coas",
-  },
-  {
-    title: "Tools",
-    href: "/tools",
-  },
-];
+import { navLinks } from "../data/navData";
 
 const MainNav = () => {
   return (
