@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Share_Tech_Mono } from "next/font/google";
 import "./globals.css";
+import MainNav from "./components/MainNav";
 
 const shareTechMono = Share_Tech_Mono({
   variable: "--font-terminal",
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body
         className={`${shareTechMono.variable} font-terminal antialiased bg-neutral-900 text-neutral-100`}
       >
+        <MainNav />
         {children}
       </body>
     </html>

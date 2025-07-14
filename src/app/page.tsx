@@ -1,12 +1,10 @@
-import MainNav from "./components/MainNav";
 import { ItemSection } from "./components/LocationSections/ItemSection";
-import { baseKCs, basePBs, middlePBs, topPBs } from "./data/itemData";
 import { Item } from "./components/LocationSections/Item";
+import { baseKCs, basePBs, middlePBs, topPBs } from "./data/itemData";
 
 export default function Home() {
   return (
     <div className="">
-      <MainNav />
       <main className="px-8 md:px-24 pt-12">
         <h1 className="text-5xl pb-12 font-bold">Dashboard Ops: Warzone EE</h1>
         <section className="pb-12">
