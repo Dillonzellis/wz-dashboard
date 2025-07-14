@@ -115,7 +115,7 @@ export default function ToolsPage() {
   };
 
   return (
-    <main className="px-8 md:px-24 pt-12 font-terminal">
+    <main className="px-4 md:px-24 pt-12 font-terminal">
       <div className="flex flex-col gap-6 max-w-2xl">
         <div>
           <h1 className="text-3xl font-bold mb-4">Lock Combination Tool</h1>
@@ -195,7 +195,7 @@ export default function ToolsPage() {
             <li>All digits in the final combination must be unique</li>
             <li>The tool will generate all valid permutations</li>
             <li>
-              Example: `&quot;`12X4X6`&quot;` will find all combinations where
+              Example: &quot;12X4X6&quot; will find all combinations where
               positions 3 and 5 are unknown
             </li>
           </ul>

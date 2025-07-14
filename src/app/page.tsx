@@ -5,23 +5,29 @@ import { baseKCs, basePBs, middlePBs, topPBs } from "./data/itemData";
 export default function Home() {
   return (
     <div className="">
-      <main className="px-8 md:px-24 pt-12">
-        <h1 className="text-5xl pb-12 font-bold">Dashboard Ops: Warzone EE</h1>
+      <main className="px-4 md:px-24 pt-12">
+        <h1 className="text-3xl md:text-5xl pb-12 font-bold">
+          Dashboard Ops: Warzone EE
+        </h1>
         <section className="pb-12">
-          <h2 className="text-4xl font-semibold pb-4">Base Floor</h2>
+          <h2 className="md:text-4xl text-2xl font-semibold pb-4">
+            Base Floor
+          </h2>
           <div className="flex flex-col gap-3">
             <ItemSection itemType="pb" items={basePBs} />
             <ItemSection itemType="kc" items={baseKCs} />
           </div>
         </section>
         <section className="pb-12">
-          <h2 className="text-4xl pb-3 font-semibold">Middle Floor</h2>
+          <h2 className="md:text-4xl text-2xl pb-3 font-semibold">
+            Middle Floor
+          </h2>
           <div className="flex flex-col gap-3">
             <ItemSection itemType="pb" items={middlePBs} />
           </div>
         </section>
         <section className="pb-12">
-          <h2 className="text-4xl font-semibold pb-3">Top Floor</h2>
+          <h2 className="md:text-4xl text-2xl font-semibold pb-3">Top Floor</h2>
           <div className="flex flex-col gap-3">
             <ItemSection itemType="pb" items={topPBs} />
           </div>
