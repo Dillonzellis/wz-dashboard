@@ -6,9 +6,13 @@ export default function Home() {
   return (
     <div className="">
       <main className="px-4 md:px-24 pt-12">
-        <h1 className="text-3xl md:text-5xl pb-12 font-bold">
+        <h1 className="text-3xl md:text-5xl pb-2 font-bold">
           Dashboard Ops: Warzone EE
         </h1>
+        <p className="pb-12 ">
+          Click the locations cards to mark which places have already been
+          checked
+        </p>
         <section className="pb-12">
           <h2 className="md:text-4xl text-2xl font-semibold pb-4">
             Base Floor
