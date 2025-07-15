@@ -1,5 +1,5 @@
-import { ItemSection } from "./components/LocationSections/ItemSection";
 import { Item } from "./components/LocationSections/Item";
+import { ItemSection } from "./components/LocationSections/ItemSection";
 import { baseKCs, basePBs, middlePBs, topPBs } from "./data/itemData";
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
       <main className="px-4 md:px-24 pt-12">
         <h1 className="text-3xl md:text-5xl pb-2 font-bold">
           Dashboard Ops: Warzone EE
+          <br /> Kyle shut the hell up
         </h1>
         <p className="pb-12 ">
           Click the locations cards to mark which places have already been
