@@ -1,6 +1,12 @@
 import { Item } from "./components/LocationSections/Item";
 import { ItemSection } from "./components/LocationSections/ItemSection";
-import { baseKCs, basePBs, middlePBs, topPBs } from "./data/itemData";
+import {
+  baseKCs,
+  basePBs,
+  middleAPBs,
+  middleBPBs,
+  topPBs,
+} from "./data/itemData";
 
 export default function Home() {
   return (
@@ -15,24 +21,26 @@ export default function Home() {
           checked
         </p>
         <section className="pb-12">
-          <h2 className="md:text-4xl text-2xl font-semibold pb-4">
-            Base Floor
-          </h2>
+          <h2 className="md:text-4xl text-2xl font-semibold pb-4">1st Floor</h2>
           <div className="flex flex-col gap-3">
             <ItemSection itemType="pb" items={basePBs} />
             <ItemSection itemType="kc" items={baseKCs} />
           </div>
         </section>
         <section className="pb-12">
-          <h2 className="md:text-4xl text-2xl pb-3 font-semibold">
-            Middle Floor
-          </h2>
+          <h2 className="md:text-4xl text-2xl pb-3 font-semibold">2nd Floor</h2>
           <div className="flex flex-col gap-3">
-            <ItemSection itemType="pb" items={middlePBs} />
+            <ItemSection itemType="pb" items={middleAPBs} />
           </div>
         </section>
         <section className="pb-12">
-          <h2 className="md:text-4xl text-2xl font-semibold pb-3">Top Floor</h2>
+          <h2 className="md:text-4xl text-2xl pb-3 font-semibold">3rd Floor</h2>
+          <div className="flex flex-col gap-3">
+            <ItemSection itemType="pb" items={middleBPBs} />
+          </div>
+        </section>
+        <section className="pb-12">
+          <h2 className="md:text-4xl text-2xl font-semibold pb-3">Roof</h2>
           <div className="flex flex-col gap-3">
             <ItemSection itemType="pb" items={topPBs} />
           </div>

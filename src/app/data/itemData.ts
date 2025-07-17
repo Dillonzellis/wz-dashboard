@@ -35,7 +35,7 @@ export const baseKCs: ItemType[] = [
   },
 ];
 
-export const middlePBs: ItemType[] = [
+export const middleAPBs: ItemType[] = [
   {
     itemLocation: "Center planters near zip (4 corners).",
     imgSrc: "/middle/middle-pb-1.png",
@@ -45,6 +45,9 @@ export const middlePBs: ItemType[] = [
       "Through door leading to upper stairwell: Right of red chair.",
     imgSrc: "/middle/middle-pb-2.png",
   },
+];
+
+export const middleBPBs: ItemType[] = [
   {
     itemLocation: "Top of zip in plant cluster near pyramid corner.",
     imgSrc: "/middle/middle-pb-3.png",
