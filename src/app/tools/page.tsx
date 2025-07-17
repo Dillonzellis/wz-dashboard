@@ -188,7 +188,7 @@ export default function ToolsPage() {
             ))}
           </div>
           <p className="mt-2 text-sm text-gray-400">
-            Click any combination to mark it as tried (turns red)
+            Click any combination to mark it as tried
           </p>
         </div>
       )}
