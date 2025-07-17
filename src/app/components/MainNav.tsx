@@ -5,7 +5,7 @@ const MainNav = () => {
   return (
     <header>
       <nav>
-        <ul className="px-8 md:px-24 py-3 flex gap-8 border-b border-r-slate-300">
+        <ul className="flex gap-8 border-b border-r-slate-300 px-8 py-3 md:px-24">
           {navLinks.map((link, idx) => (
             <li className="" key={idx}>
               <Link href={link.href} className="text-lg hover:underline">

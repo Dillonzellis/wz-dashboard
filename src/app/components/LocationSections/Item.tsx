@@ -3,7 +3,7 @@ import type { ItemType } from "@/app/data/itemData";
 
 export const Item = ({ itemLocation, imgSrc }: ItemType) => {
   return (
-    <div className="p-3 border-neutral-700 border h-full">
+    <div className="h-full border border-neutral-700 p-3">
       <Image
         src={imgSrc}
         alt=""

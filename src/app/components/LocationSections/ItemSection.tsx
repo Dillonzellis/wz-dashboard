@@ -42,11 +42,11 @@ export const ItemSection = ({
   return (
     <section className="pb-12">
       {title && (
-        <h2 className="md:text-4xl text-2xl font-semibold pb-4">{title}</h2>
+        <h2 className="pb-4 text-2xl font-semibold md:text-4xl">{title}</h2>
       )}
       <div className="flex flex-col gap-3">
-        <h3 className="pb-1 md:text-xl text-lg">{renderedItem}</h3>
-        <div className="grid gap-4 md:grid-cols-3 lg:grid-col-5">
+        <h3 className="pb-1 text-lg md:text-xl">{renderedItem}</h3>
+        <div className="lg:grid-col-5 grid gap-4 md:grid-cols-3">
           {items.map((item, idx) => (
             <div
               key={idx}

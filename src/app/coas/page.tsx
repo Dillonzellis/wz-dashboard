@@ -17,14 +17,14 @@ const COAStrategy = ({
 }: COAStrategyProps) => {
   return (
     <section>
-      <h2 className={`text-lg md:text-xl font-semibold pb-3 ${colorClass}`}>
-        {title} <span className="text-neutral-300 text-sm">({subtitle})</span>
+      <h2 className={`pb-3 text-lg font-semibold md:text-xl ${colorClass}`}>
+        {title} <span className="text-sm text-neutral-300">({subtitle})</span>
       </h2>
-      <div className="bg-neutral-800 border border-neutral-700 p-4">
+      <div className="border border-neutral-700 bg-neutral-800 p-4">
         <ul className="space-y-2 text-sm">
           {items.map((item, index) => (
             <li key={index} className="flex items-start">
-              <span className={`${bulletColorClass} mr-2 mt-0.5`}>•</span>
+              <span className={`${bulletColorClass} mt-0.5 mr-2`}>•</span>
               <span>{item}</span>
             </li>
           ))}
@@ -37,9 +37,9 @@ const COAStrategy = ({
 export default function COAPage() {
   return (
     <div className="">
-      <main className="px-4 md:px-24 pt-12">
-        <h1 className="text-3xl md:text-5xl pb-12 font-bold">COA Variations</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <main className="px-4 pt-12 md:px-24">
+        <h1 className="pb-12 text-3xl font-bold md:text-5xl">COA Variations</h1>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {coaStrategies.map((strategy, index) => (
             <COAStrategy
               key={index}

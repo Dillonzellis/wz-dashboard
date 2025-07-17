@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${shareTechMono.variable} min-h-screen max-w-[1500px] mx-auto font-terminal antialiased bg-neutral-900 text-neutral-100`}
+        className={`${shareTechMono.variable} font-terminal mx-auto min-h-screen max-w-[1500px] bg-neutral-900 text-neutral-100 antialiased`}
       >
         <MainNav />
 
-        <main className="px-4 md:px-24 py-12">{children}</main>
+        <main className="px-4 py-12 md:px-24">{children}</main>
       </body>
     </html>
   );
