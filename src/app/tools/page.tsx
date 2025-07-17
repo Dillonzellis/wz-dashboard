@@ -119,7 +119,21 @@ export default function ToolsPage() {
   };
 
   const handleCombinationClick = (combo: string) => {
-    setClickedCombinations((prev) => new Set([...prev, combo]));
+    setClickedCombinations((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(combo)) {
+        newSet.delete(combo); // Remove if already clicked
+      } else {
+        newSet.add(combo); // Add if not clicked
+      }
+      return newSet;
+    });
+  };
+
+  const resetCalculator = () => {
+    setInput("");
+    setCombinations([]);
+    setClickedCombinations(new Set());
   };
 
   return (
@@ -205,6 +219,13 @@ export default function ToolsPage() {
           </li>
         </ul>
       </div>
+
+      <button
+        onClick={resetCalculator}
+        className="cursor-pointer border border-neutral-600 bg-red-800 p-4 text-2xl text-neutral-100 transition-all duration-200 hover:bg-red-600"
+      >
+        Reset Calculator
+      </button>
     </div>
   );
 }
