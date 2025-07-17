@@ -9,7 +9,7 @@ export const Item = ({ itemLocation, imgSrc }: ItemType) => {
         alt=""
         width={300}
         height={300}
-        className="max-w-full object-cover pb-4"
+        className="w-full object-cover pb-4"
       />
       <div>{itemLocation}</div>
     </div>
