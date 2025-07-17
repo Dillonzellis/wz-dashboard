@@ -7,7 +7,7 @@ export default function ToolsPage() {
   const [combinations, setCombinations] = useState<string[]>([]);
   const [isCalculating, setIsCalculating] = useState(false);
   const [clickedCombinations, setClickedCombinations] = useState<Set<string>>(
-    new Set(),
+    new Set()
   );
 
   const generateCombinations = () => {
@@ -59,7 +59,7 @@ export default function ToolsPage() {
     // Generate all permutations of available digits for unknown positions
     const permutations = getPermutations(
       availableDigits,
-      unknownPositions.length,
+      unknownPositions.length
     );
     const results: string[] = [];
 
@@ -98,9 +98,17 @@ export default function ToolsPage() {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.toUpperCase();
+
     // Only allow digits and X, max 6 characters
     if (/^[0-9X]*$/.test(value) && value.length <= 6) {
-      setInput(value);
+      // Check for duplicate digits (but allow multiple X's)
+      const digits = value.split("").filter((char) => char !== "X");
+      const uniqueDigits = new Set(digits);
+
+      // Only update if no duplicate digits found
+      if (digits.length === uniqueDigits.size) {
+        setInput(value);
+      }
     }
   };
 
@@ -130,8 +138,7 @@ export default function ToolsPage() {
           <div>
             <label
               htmlFor="combination"
-              className="block text-sm font-medium mb-2"
-            >
+              className="block text-sm font-medium mb-2">
               Enter combination pattern:
             </label>
             <input
@@ -153,8 +160,7 @@ export default function ToolsPage() {
           <button
             onClick={generateCombinations}
             disabled={isCalculating || input.length !== 6}
-            className="transition-all duration-200 text-2xl border border-neutral-600 bg-neutral-800 text-neutral-100 p-4 cursor-pointer hover:bg-teal-600 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
+            className="transition-all duration-200 text-2xl border border-neutral-600 bg-neutral-800 text-neutral-100 p-4 cursor-pointer hover:bg-teal-600 disabled:opacity-50 disabled:cursor-not-allowed">
             {isCalculating ? "Calculating..." : "Generate Combinations"}
           </button>
         </div>
@@ -174,8 +180,7 @@ export default function ToolsPage() {
                       : "bg-neutral-700 hover:bg-neutral-600"
                   }`}
                   onClick={() => handleCombinationClick(combo)}
-                  title="Click to mark as tried"
-                >
+                  title="Click to mark as tried">
                   {combo}
                 </div>
               ))}
