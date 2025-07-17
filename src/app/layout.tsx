@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${shareTechMono.variable} min-h-screen font-terminal antialiased bg-neutral-900 text-neutral-100`}
+        className={`${shareTechMono.variable} min-h-screen max-w-[1500px] mx-auto font-terminal antialiased bg-neutral-900 text-neutral-100`}
       >
         <MainNav />
 

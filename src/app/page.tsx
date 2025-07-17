@@ -18,31 +18,11 @@ export default function Home() {
       <p className="pb-12 ">
         Click the locations cards to mark which places have already been checked
       </p>
-      <section className="pb-12">
-        <h2 className="md:text-4xl text-2xl font-semibold pb-4">1st Floor</h2>
-        <div className="flex flex-col gap-3">
-          <ItemSection itemType="pb" items={basePBs} />
-          <ItemSection itemType="kc" items={baseKCs} />
-        </div>
-      </section>
-      <section className="pb-12">
-        <h2 className="md:text-4xl text-2xl pb-3 font-semibold">2nd Floor</h2>
-        <div className="flex flex-col gap-3">
-          <ItemSection itemType="pb" items={middleAPBs} />
-        </div>
-      </section>
-      <section className="pb-12">
-        <h2 className="md:text-4xl text-2xl pb-3 font-semibold">3rd Floor</h2>
-        <div className="flex flex-col gap-3">
-          <ItemSection itemType="pb" items={middleBPBs} />
-        </div>
-      </section>
-      <section className="pb-12">
-        <h2 className="md:text-4xl text-2xl font-semibold pb-3">Roof</h2>
-        <div className="flex flex-col gap-3">
-          <ItemSection itemType="pb" items={topPBs} />
-        </div>
-      </section>
+      <ItemSection title="1st Floor" items={basePBs} />
+      <ItemSection itemType="kc" items={baseKCs} />
+      <ItemSection title="2nd Floor" items={middleAPBs} />
+      <ItemSection title="3rd Floor" items={middleBPBs} />
+      <ItemSection title="Roof" items={topPBs} />
       <section className="max-w-lg mx-auto">
         <h2 className="text-2xl pb-3 font-medium">Pool Table Tower</h2>
         <Item
