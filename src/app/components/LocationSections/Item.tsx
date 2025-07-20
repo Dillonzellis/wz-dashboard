@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { ItemType } from "@/app/data/itemData";
+import Image from "next/image";
 
 export const Item = ({ itemLocation, imgSrc }: ItemType) => {
   return (
@@ -7,8 +7,8 @@ export const Item = ({ itemLocation, imgSrc }: ItemType) => {
       <Image
         src={imgSrc}
         alt=""
-        width={300}
-        height={300}
+        width={346}
+        height={306}
         className="w-full object-cover pb-4"
       />
       <div>{itemLocation}</div>
