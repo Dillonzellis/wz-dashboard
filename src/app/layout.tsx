@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Share_Tech_Mono } from "next/font/google";
 import "./globals.css";
-import MainNav from "./components/MainNav";
+import MainNav from "./components/main-nav/main-nav";
 
 const shareTechMono = Share_Tech_Mono({
   variable: "--font-terminal",

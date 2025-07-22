@@ -9,7 +9,7 @@ export const navLinks = [
     href: "/coas",
   },
   {
-    title: "Tools",
-    href: "/tools",
+    title: "Lock Calculator",
+    href: "/lock-calculator",
   },
 ];

@@ -1,12 +1,12 @@
-import { Item } from "./components/LocationSections/Item";
-import { ItemSection } from "./components/LocationSections/ItemSection";
 import {
-  baseKCs,
   basePBs,
+  baseKCs,
   middleAPBs,
   middleBPBs,
   topPBs,
-} from "./data/itemData";
+} from "@/components/location-sections/data";
+import { Item } from "@/components/location-sections/item";
+import { ItemSection } from "@/components/location-sections/item-section";
 
 export default function Home() {
   return (

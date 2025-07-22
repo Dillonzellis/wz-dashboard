@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinks } from "../data/navData";
+import { navLinks } from "./data";
 
 const MainNav = () => {
   return (
