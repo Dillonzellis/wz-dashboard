@@ -1,5 +1,5 @@
-import type { ItemType } from "@/app/data/itemData";
 import Image from "next/image";
+import { ItemType } from "./data";
 
 export const Item = ({ itemLocation, imgSrc }: ItemType) => {
   return (

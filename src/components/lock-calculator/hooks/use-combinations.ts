@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { parsePattern, generateCombinations } from "../lib/combination-utils";
+import { generateCombinations } from "../lib/combination-utils";
 import type { CombinationResult } from "../lib/types";
 
 export function useCombinations() {

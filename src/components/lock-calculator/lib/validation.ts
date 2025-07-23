@@ -1,4 +1,4 @@
-import { ValidationResult } from "../types";
+import { ValidationResult } from "./types";
 
 export function validateInput(value: string): ValidationResult {
   if (!/^[0-9X]*$/.test(value)) {

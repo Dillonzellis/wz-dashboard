@@ -1,7 +1,8 @@
 "use client";
+
 import { useState } from "react";
-import { ItemType } from "@/app/data/itemData";
 import { Item } from "./item";
+import { ItemType } from "./data";
 
 interface ItemSectionProps {
   itemType?: string;
