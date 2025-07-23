@@ -58,7 +58,7 @@ export default function KyleCalcPage() {
           alt="Kyle Calculator Avatar"
           height={200}
           width={200}
-          className="mb-8 rounded-lg shadow-lg"
+          className="mb-8 rounded-sm shadow-lg"
         />
 
         <div className="pb-8 text-center text-gray-300 italic">
@@ -77,7 +77,7 @@ export default function KyleCalcPage() {
               id="players"
               type="text"
               autoComplete="off"
-              className="w-full rounded border border-neutral-600 bg-neutral-800 p-3 font-mono text-base text-neutral-100 caret-teal-500 transition-colors focus:border-teal-500 focus:outline-none"
+              className="w-full border border-neutral-600 bg-neutral-800 p-3 font-mono text-base text-neutral-100 caret-teal-500 transition-colors focus:border-teal-500 focus:outline-none"
               placeholder="42"
               value={players}
               onChange={handlePlayerInput}
@@ -96,7 +96,7 @@ export default function KyleCalcPage() {
               id="squads"
               type="text"
               autoComplete="off"
-              className="w-full rounded border border-neutral-600 bg-neutral-800 p-3 font-mono text-base text-neutral-100 caret-teal-500 transition-colors focus:border-teal-500 focus:outline-none"
+              className="w-full border border-neutral-600 bg-neutral-800 p-3 font-mono text-base text-neutral-100 caret-teal-500 transition-colors focus:border-teal-500 focus:outline-none"
               placeholder="12"
               value={squads}
               onChange={handleSquadInput}
@@ -108,20 +108,20 @@ export default function KyleCalcPage() {
         <button
           onClick={calculateAverage}
           disabled={!players || !squads || squads === "0"}
-          className="mb-4 w-full max-w-lg cursor-pointer rounded border border-neutral-600 bg-neutral-800 p-3 text-xl font-semibold text-neutral-100 transition-all duration-200 hover:border-teal-600 hover:bg-teal-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-neutral-800"
+          className="mb-4 w-full max-w-lg cursor-pointer border border-neutral-600 bg-neutral-800 p-3 text-xl font-semibold text-neutral-100 transition-all duration-200 hover:border-teal-600 hover:bg-teal-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-neutral-800"
         >
           Calculate
         </button>
 
         <button
           onClick={handleReset}
-          className="w-full max-w-lg cursor-pointer rounded border border-neutral-600 bg-red-800 p-3 text-xl font-semibold text-neutral-100 transition-all duration-200 hover:bg-red-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-neutral-800"
+          className="w-full max-w-lg cursor-pointer border border-neutral-600 bg-red-800 p-3 text-xl font-semibold text-neutral-100 transition-all duration-200 hover:bg-red-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-neutral-800"
         >
           Reset
         </button>
 
         {result !== null && (
-          <div className="mt-8 w-full max-w-lg rounded-lg border border-neutral-600 bg-neutral-800 p-6">
+          <div className="mt-8 w-full max-w-lg border border-neutral-600 bg-neutral-800 p-6">
             <div className="text-center">
               <p className="mb-2 text-gray-400">Average Players per Squad:</p>
               <p className="text-5xl font-bold text-teal-400">
