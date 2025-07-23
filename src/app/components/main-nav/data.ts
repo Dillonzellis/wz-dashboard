@@ -5,11 +5,15 @@ export const navLinks = [
   },
 
   {
-    title: "COAs",
-    href: "/coas",
+    title: "COA",
+    href: "/coa",
   },
   {
     title: "Lock Calculator",
     href: "/lock-calculator",
+  },
+  {
+    title: "Kyle Calculator",
+    href: "/kyle-calculator",
   },
 ];

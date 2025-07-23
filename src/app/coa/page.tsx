@@ -1,5 +1,5 @@
-import { COAStrategy } from "@/features/coa-strategy/coa-strategy";
-import { coaStrategies } from "@/features/coa-strategy/data";
+import { COAStrategy } from "@/components/coa-strategy/coa-strategy";
+import { coaStrategies } from "@/components/coa-strategy/data";
 
 export default function COAPage() {
   return (
