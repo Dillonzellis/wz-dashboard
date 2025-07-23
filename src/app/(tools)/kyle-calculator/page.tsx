@@ -115,7 +115,7 @@ export default function KyleCalcPage() {
 
         <button
           onClick={handleReset}
-          className="w-full max-w-lg cursor-pointer rounded border border-neutral-600 bg-red-800 p-3 text-xl font-semibold text-neutral-100 transition-all duration-200 hover:border-teal-600 hover:bg-red-600 hover:bg-teal-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-neutral-800"
+          className="w-full max-w-lg cursor-pointer rounded border border-neutral-600 bg-red-800 p-3 text-xl font-semibold text-neutral-100 transition-all duration-200 hover:bg-red-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-neutral-800"
         >
           Reset
         </button>
