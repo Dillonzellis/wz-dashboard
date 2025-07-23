@@ -11,7 +11,7 @@ export const Item = ({ itemLocation, imgSrc }: ItemType) => {
         height={306}
         className="w-full object-cover pt-1 pb-4"
       />
-      <div className="px-3">{itemLocation}</div>
+      <div className="px-1.5 pb-3">{itemLocation}</div>
     </div>
   );
 };
