@@ -129,7 +129,7 @@ export default function KyleCalcPage() {
               htmlFor="yourSquadSize"
               className="mb-2 block text-sm font-medium text-gray-400"
             >
-              Your Squad Size (1-4)
+              Your Squad Size
             </label>
             <input
               id="yourSquadSize"
@@ -168,9 +168,6 @@ export default function KyleCalcPage() {
               <p className="mb-2 text-gray-400">Average Enemy Players per Squad:</p>
               <p className="text-5xl font-bold text-teal-400">
                 {result.toFixed(2)}
-              </p>
-              <p className="mt-4 text-sm text-gray-500">
-                (Excluding your squad)
               </p>
             </div>
           </div>
