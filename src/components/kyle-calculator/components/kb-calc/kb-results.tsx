@@ -1,11 +1,19 @@
 "use client";
 
-import { useKbCalc } from "../hooks/use-kb-calc";
+import { KbCalcReturn } from "../../hooks/use-kb-calc";
 
-export const KbResults = () => {
-  const { players, result, squads, handleReset, calculateAverage } =
-    useKbCalc();
+type KbResultsProps = Pick<
+  KbCalcReturn,
+  "players" | "result" | "squads" | "handleReset" | "calculateAverage"
+>;
 
+export const KbResults = ({
+  players,
+  result,
+  squads,
+  handleReset,
+  calculateAverage,
+}: KbResultsProps) => {
   return (
     <>
       <button
@@ -21,7 +29,6 @@ export const KbResults = () => {
       >
         Reset
       </button>
-
       {result !== null && (
         <div className="mt-8 w-full max-w-lg border border-neutral-600 bg-neutral-800 p-6">
           <div className="text-center">

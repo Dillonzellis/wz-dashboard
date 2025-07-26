@@ -2,19 +2,28 @@
 
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useKbCalc } from "../hooks/use-kb-calc";
+import type { KbCalcReturn } from "../../hooks/use-kb-calc";
 
-export const KbInputs = () => {
-  const {
-    players,
-    squads,
-    yourSquadSize,
-    handlePlayerInput,
-    handleSquadInput,
-    handleKeyPress,
-    handleYourSquadInput,
-  } = useKbCalc();
+type KbInputsProps = Pick<
+  KbCalcReturn,
+  | "players"
+  | "squads"
+  | "yourSquadSize"
+  | "handlePlayerInput"
+  | "handleSquadInput"
+  | "handleKeyPress"
+  | "handleYourSquadInput"
+>;
 
+export const KbInputs = ({
+  players,
+  handlePlayerInput,
+  handleKeyPress,
+  squads,
+  handleSquadInput,
+  yourSquadSize,
+  handleYourSquadInput,
+}: KbInputsProps) => {
   return (
     <div className="flex w-full max-w-lg flex-col gap-4 pb-6">
       <div className="flex flex-col gap-4 sm:flex-row">

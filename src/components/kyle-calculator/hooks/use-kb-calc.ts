@@ -2,6 +2,19 @@
 
 import { useState } from "react";
 
+export interface KbCalcReturn {
+  players: string;
+  squads: string;
+  yourSquadSize: string;
+  result: number | null;
+  handleReset: () => void;
+  handlePlayerInput: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleSquadInput: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleYourSquadInput: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleKeyPress: (e: React.KeyboardEvent) => void;
+  calculateAverage: () => void;
+}
+
 export function useKbCalc() {
   const [players, setPlayers] = useState("");
   const [squads, setSquads] = useState("");
