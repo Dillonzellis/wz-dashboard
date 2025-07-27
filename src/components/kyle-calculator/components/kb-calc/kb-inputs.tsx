@@ -36,7 +36,7 @@ export const KbInputs = ({
             placeholder="42"
             value={players}
             onChange={handlePlayerInput}
-            onKeyPress={handleKeyPress}
+            onKeyDown={handleKeyPress}
           />
         </div>
         <div className="flex-1">
@@ -48,7 +48,7 @@ export const KbInputs = ({
             placeholder="12"
             value={squads}
             onChange={handleSquadInput}
-            onKeyPress={handleKeyPress}
+            onKeyDown={handleKeyPress}
           />
         </div>
       </div>
@@ -61,7 +61,7 @@ export const KbInputs = ({
           placeholder="4"
           value={yourSquadSize}
           onChange={handleYourSquadInput}
-          onKeyPress={handleKeyPress}
+          onKeyDown={handleKeyPress}
         />
         <p className="mt-1 text-xs text-gray-500">
           How many players are alive in your squad (including you)

@@ -1,5 +1,9 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+
 interface CombinationInputProps {
   input: string;
   isCalculating: boolean;
@@ -22,17 +26,17 @@ export function CombinationInput({
   return (
     <div className="flex flex-col gap-4">
       <div>
-        <label htmlFor="combination" className="mb-2 block text-sm font-medium">
+        <Label htmlFor="combination" className="">
           Enter combination pattern:
-        </label>
-        <input
+        </Label>
+        <Input
+          variantSize="large"
           id="combination"
           type="text"
           value={input}
           onChange={onInputChange}
-          onKeyPress={handleKeyPress}
+          onKeyDown={handleKeyPress}
           autoComplete="off"
-          className="w-full border border-neutral-600 bg-neutral-800 p-4 font-mono text-5xl tracking-widest text-neutral-100 caret-teal-500"
           placeholder="012X45"
           maxLength={6}
         />
@@ -41,14 +45,13 @@ export function CombinationInput({
           characters
         </p>
       </div>
-
-      <button
+      <Button
         onClick={onGenerate}
         disabled={isCalculating || input.length !== 6}
-        className="cursor-pointer border border-neutral-600 bg-neutral-800 p-4 text-2xl text-neutral-100 transition-all duration-200 hover:bg-teal-600 disabled:cursor-not-allowed disabled:opacity-50"
+        size="large"
       >
         {isCalculating ? "Calculating..." : "Generate Combinations"}
-      </button>
+      </Button>
     </div>
   );
 }

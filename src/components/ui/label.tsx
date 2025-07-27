@@ -1,10 +1,10 @@
 import { cn } from "@/lib/utils";
 
-export const Label = ({
+export function Label({
   className,
   htmlFor,
   ...props
-}: React.ComponentProps<"label">) => {
+}: React.ComponentProps<"label">) {
   return (
     <label
       htmlFor={htmlFor}
@@ -12,4 +12,4 @@ export const Label = ({
       {...props}
     />
   );
-};
+}
