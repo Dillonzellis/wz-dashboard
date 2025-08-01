@@ -26,7 +26,9 @@ export default function CodeCards({ title, codeArr }: CodeCardsProps) {
               "flex flex-col border bg-neutral-800 px-2 py-1",
             )}
           >
-            <div className="text-lg font-semibold">{code.name}</div>
+            <div className="text-lg leading-[1.25] font-semibold">
+              {code.name}
+            </div>
             <div className="text-base">{code.code}</div>
           </div>
         ))}

@@ -1,5 +1,5 @@
 import BunkerCodes from "@/components/bunker-locations/bunker-codes/bunker-codes";
-import BunkerMap from "@/components/bunker-locations/bunker-map";
+import ClickableImage from "@/components/ui/image-modal/clickable-image";
 import { MainHeading } from "@/components/ui/main-heading";
 
 export default function BunkerPage() {
@@ -7,7 +7,13 @@ export default function BunkerPage() {
     <div>
       <MainHeading>Bunkers</MainHeading>
       <section className="flex flex-col items-start gap-4 lg:flex-row">
-        <BunkerMap />
+        <ClickableImage
+          src="/bunker-locations.jpg"
+          alt="Bunker locations map"
+          className="w-full max-w-[750px] object-contain"
+          height={1291}
+          width={1080}
+        />
         <BunkerCodes />
       </section>
     </div>
