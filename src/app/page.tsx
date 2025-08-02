@@ -7,14 +7,13 @@ import {
 } from "@/components/location-sections/data";
 import { Item } from "@/components/location-sections/item";
 import { ItemSection } from "@/components/location-sections/item-section";
+import { MainHeading } from "@/components/ui/main-heading";
 
 export default function Home() {
   return (
-    <div className="">
-      <h1 className="pb-2 text-3xl font-bold md:text-5xl">
-        Dashboard Ops: Warzone EE
-      </h1>
-      <p className="pb-12">
+    <div>
+      <MainHeading className="pb-2">Dashboard Ops: Warzone EE</MainHeading>
+      <p className="pb-6 md:pb-12">
         Click the location cards to mark which places have already been checked.
       </p>
       <ItemSection title="1st Floor" items={basePBs} />

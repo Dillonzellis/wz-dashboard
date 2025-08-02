@@ -1,10 +1,11 @@
+import { MainHeading } from "@/components/ui/main-heading";
 import Image from "next/image";
 
 export const KbIntro = () => {
   return (
     <>
-      <div className="mb-2 text-4xl font-bold">The Kyle Calculator</div>
-      <p className="mb-6 text-lg text-gray-400">
+      <MainHeading>The Kyle Calculator</MainHeading>
+      <p className="mb-6 text-lg text-neutral-400">
         Because the math is just too damn hard
       </p>
       <Image

@@ -4,7 +4,7 @@ import { MainHeading } from "@/components/ui/main-heading";
 
 export default function COAPage() {
   return (
-    <main className="px-4 pt-12 md:px-24">
+    <div>
       <MainHeading>COA Variations</MainHeading>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {coaStrategies.map((strategy, index) => (
@@ -18,6 +18,6 @@ export default function COAPage() {
           />
         ))}
       </div>
-    </main>
+    </div>
   );
 }
