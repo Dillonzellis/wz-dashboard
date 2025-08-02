@@ -21,10 +21,12 @@ export default function ImageModal({
     };
 
     if (isOpen) {
+      document.body.classList.add("modal-open");
       document.addEventListener("keydown", handleKeyPress);
     }
 
     return () => {
+      document.body.classList.remove("modal-open");
       document.removeEventListener("keydown", handleKeyPress);
     };
   }, [isOpen, onClose]);
@@ -34,12 +36,12 @@ export default function ImageModal({
   return (
     <>
       <div className="fixed inset-0 z-40 bg-neutral-900/90" onClick={onClose} />
-      <div className="absolute inset-0 z-50 flex min-h-screen items-center justify-center">
-        <div className="relative max-h-full max-w-full">
+      <div className="fixed inset-0 z-50 flex min-h-full items-center justify-center">
+        <div className="relative max-h-full max-w-screen">
           <Image
             {...imageProps}
             alt={imageProps.alt}
-            className="max-h-full max-w-full object-contain p-4 hover:cursor-pointer"
+            className="max-h-screen max-w-full object-contain p-4 hover:cursor-pointer"
             onClick={onClose}
           />
         </div>

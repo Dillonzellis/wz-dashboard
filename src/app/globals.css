@@ -3,3 +3,6 @@
 @theme {
   --font-terminal: var(--font-terminal);
 }
+.modal-open {
+  overflow: hidden;
+}
