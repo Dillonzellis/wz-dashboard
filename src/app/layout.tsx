@@ -25,8 +25,7 @@ export default function RootLayout({
         className={`${shareTechMono.variable} font-terminal min-h-screen bg-neutral-900 text-neutral-100 antialiased`}
       >
         <MainNav />
-
-        <main className="mx-auto max-w-[1500px] px-4 py-12 md:px-24">
+        <main className="mx-auto max-w-[1500px] px-5 py-4 md:px-24 md:py-12">
           {children}
         </main>
       </body>

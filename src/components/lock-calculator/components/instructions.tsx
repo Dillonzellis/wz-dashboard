@@ -1,6 +1,6 @@
 export function Instructions() {
   return (
-    <div className="mt-8 text-sm text-gray-400">
+    <div className="mt-8 text-sm text-neutral-400">
       <h3 className="mb-2 font-bold">How it works:</h3>
       <ul className="list-inside list-disc space-y-1">
         <li>Enter a 6-digit pattern using numbers 0-9 and X for unknowns</li>
