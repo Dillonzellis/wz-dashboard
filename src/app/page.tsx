@@ -25,7 +25,7 @@ export default function Home() {
       <section className="mx-auto max-w-lg">
         <h2 className="pb-3 text-2xl font-medium">Pool Table Tower</h2>
         <Item
-          imgSrc="/pool-table-tower.png"
+          imgSrc="/tower-ee/pool-table-tower.png"
           itemLocation="Pool table tower for reference of other towers and location of secret room."
         />
       </section>

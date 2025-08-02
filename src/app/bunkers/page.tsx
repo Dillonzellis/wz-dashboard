@@ -8,7 +8,7 @@ export default function BunkerPage() {
       <MainHeading>Bunkers</MainHeading>
       <section className="flex flex-col items-start gap-4 lg:flex-row">
         <ClickableImage
-          src="/bunker-overview.jpg"
+          src="/bunker-locations/bunker-overview.jpg"
           alt="Bunker locations map"
           className="w-full max-w-[750px] object-contain"
           height={1291}
