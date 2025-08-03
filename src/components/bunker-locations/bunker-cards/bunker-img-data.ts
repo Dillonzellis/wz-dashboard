@@ -71,19 +71,19 @@ export const bunkerCardsData = [
 export const shackCardsData = [
   {
     id: "Farmland",
-    bunkerImgSrc: "/bunker-locations/bunker-0.jpg",
+    bunkerImgSrc: "/bunker-locations/farmland-shack.jpg",
     title: "Shack Farmland",
     desc: "Down by the water. Can see by broken street rail.",
   },
   {
     id: "Prison",
-    bunkerImgSrc: "/bunker-locations/bunker-0.jpg",
+    bunkerImgSrc: "/bunker-locations/prison-shack.jpg",
     title: "Shack Prison",
     desc: "Down by the water. Can see by broken street rail.",
   },
   {
     id: "TV-Station",
-    bunkerImgSrc: "/bunker-locations/bunker-0.jpg",
+    bunkerImgSrc: "/bunker-locations/tv-station-shack.jpg",
     title: "Shack TV Station",
     desc: "Down by the water. Can see by broken street rail.",
   },
