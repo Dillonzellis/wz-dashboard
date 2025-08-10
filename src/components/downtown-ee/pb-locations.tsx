@@ -47,7 +47,7 @@ export default function PbLocations() {
           />
         ))}
       </CardWrapper>
-      <CardWrapper className="justify-center">
+      <CardWrapper>
         <Card
           imgSrc="/tower-ee/pool-table-tower.png"
           imgAlt="pool table tower"
