@@ -19,8 +19,8 @@ export default function Card({ id, imgSrc, imgAlt, title, desc }: CardProps) {
         width={1200}
       />
       <div className="px-2 py-3">
-        <div className="text-lg font-semibold">{title}</div>
-        <div className="text-sm tracking-tight text-neutral-400">{desc}</div>
+        <div className="text-lg font-semibold tracking-tight">{title}</div>
+        <div className="text-sm tracking-tighter text-neutral-400">{desc}</div>
       </div>
     </div>
   );

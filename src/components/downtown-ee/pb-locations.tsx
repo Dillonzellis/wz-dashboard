@@ -5,14 +5,6 @@ import { baseKCs, basePBs, middlePBs, topPBs } from "./data";
 export default function PbLocations() {
   return (
     <div className="flex flex-col gap-4">
-      <CardWrapper className="justify-center">
-        <Card
-          imgSrc="/tower-ee/pool-table-tower.png"
-          imgAlt="pool table tower"
-          title="Pool Table Tower"
-          desc="Pool table tower for reference of other towers and location of secret room."
-        />
-      </CardWrapper>
       <CardWrapper>
         {basePBs.map((location, idx) => (
           <Card
@@ -54,6 +46,14 @@ export default function PbLocations() {
             desc={location.desc}
           />
         ))}
+      </CardWrapper>
+      <CardWrapper className="justify-center">
+        <Card
+          imgSrc="/tower-ee/pool-table-tower.png"
+          imgAlt="pool table tower"
+          title="Pool Table Tower"
+          desc="For reference of other towers."
+        />
       </CardWrapper>
     </div>
   );
