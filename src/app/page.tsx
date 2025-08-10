@@ -1,4 +1,5 @@
 import PbLocations from "@/components/downtown-ee/pb-locations";
+import VideoRoute from "@/components/downtown-ee/video-route";
 import { MainHeading } from "@/components/ui/main-heading";
 
 export default function Home() {
@@ -10,7 +11,10 @@ export default function Home() {
           Click the location cards to enlarge the image.
         </p>
       </section>
-      <PbLocations />
+      <section>
+        <PbLocations />
+        <VideoRoute />
+      </section>
     </div>
   );
 }

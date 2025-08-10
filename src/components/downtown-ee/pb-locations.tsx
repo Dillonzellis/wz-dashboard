@@ -4,7 +4,7 @@ import { baseKCs, basePBs, middlePBs, topPBs } from "./data";
 
 export default function PbLocations() {
   return (
-    <section className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4">
       <CardWrapper className="justify-center">
         <Card
           imgSrc="/tower-ee/pool-table-tower.png"
@@ -55,6 +55,6 @@ export default function PbLocations() {
           />
         ))}
       </CardWrapper>
-    </section>
+    </div>
   );
 }
