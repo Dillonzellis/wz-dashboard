@@ -11,6 +11,7 @@ export default function BunkerCards() {
           {bunkerCardsData.map((bunker) => (
             <Card
               key={bunker.id}
+              id={bunker.id}
               imgSrc={bunker.bunkerImgSrc}
               imgAlt={bunker.title}
               title={bunker.title}
@@ -25,6 +26,7 @@ export default function BunkerCards() {
           {shackCardsData.map((shack) => (
             <Card
               key={shack.id}
+              id={shack.id}
               imgSrc={shack.bunkerImgSrc}
               imgAlt={shack.title}
               title={shack.title}

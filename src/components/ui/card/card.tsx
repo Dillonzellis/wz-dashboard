@@ -1,15 +1,16 @@
 import ClickableImage from "../image-modal/clickable-image";
 
 interface CardProps {
+  id?: string;
   imgSrc: string;
   imgAlt: string;
   title: string;
   desc?: string;
 }
 
-export default function Card({ imgSrc, imgAlt, title, desc }: CardProps) {
+export default function Card({ id, imgSrc, imgAlt, title, desc }: CardProps) {
   return (
-    <div className="border border-neutral-500">
+    <div {...(id && { id })} className="border border-neutral-500">
       <ClickableImage
         src={imgSrc}
         alt={imgAlt}

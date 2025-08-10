@@ -14,29 +14,18 @@ export default function PbLocations() {
         />
       </CardWrapper>
       <CardWrapper>
-        {basePBs.map((location) => (
+        {basePBs.map((location, idx) => (
           <Card
-            key={location.title}
+            key={idx}
             imgSrc={location.imgSrc}
             imgAlt={location.title}
             title={location.title}
             desc={location.desc}
           />
         ))}
-        {baseKCs.map((location) => (
+        {baseKCs.map((location, idx) => (
           <Card
-            key={location.title}
-            imgSrc={location.imgSrc}
-            imgAlt={location.title}
-            title={location.title}
-            desc={location.desc}
-          />
-        ))}
-      </CardWrapper>
-      <CardWrapper>
-        {middlePBs.map((location) => (
-          <Card
-            key={location.title}
+            key={idx}
             imgSrc={location.imgSrc}
             imgAlt={location.title}
             title={location.title}
@@ -45,9 +34,20 @@ export default function PbLocations() {
         ))}
       </CardWrapper>
       <CardWrapper>
-        {topPBs.map((location) => (
+        {middlePBs.map((location, idx) => (
           <Card
-            key={location.title}
+            key={idx}
+            imgSrc={location.imgSrc}
+            imgAlt={location.title}
+            title={location.title}
+            desc={location.desc}
+          />
+        ))}
+      </CardWrapper>
+      <CardWrapper>
+        {topPBs.map((location, idx) => (
+          <Card
+            key={idx}
             imgSrc={location.imgSrc}
             imgAlt={location.title}
             title={location.title}
