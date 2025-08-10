@@ -1,4 +1,3 @@
-import ClickableImage from "@/components/ui/image-modal/clickable-image";
 import { bunkerCardsData, shackCardsData } from "./bunker-img-data";
 import Card from "@/components/ui/card/card";
 import CardWrapper from "@/components/ui/card/card-wrapper";

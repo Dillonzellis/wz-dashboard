@@ -1,5 +1,4 @@
 import PbLocations from "@/components/downtown-ee/pb-locations";
-import Card from "@/components/ui/card/card";
 import { MainHeading } from "@/components/ui/main-heading";
 
 export default function Home() {
