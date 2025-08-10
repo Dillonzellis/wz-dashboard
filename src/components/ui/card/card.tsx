@@ -13,13 +13,13 @@ export default function Card({ imgSrc, imgAlt, title, desc }: CardProps) {
       <ClickableImage
         src={imgSrc}
         alt={imgAlt}
-        className="w-full border-b border-neutral-500 object-cover"
+        className="aspect-video w-full border-b border-neutral-500 object-cover"
         height={675}
         width={1200}
       />
       <div className="px-2 py-3">
         <div className="text-lg font-semibold">{title}</div>
-        <div className="text-sm text-neutral-400">{desc}</div>
+        <div className="text-sm tracking-tight text-neutral-400">{desc}</div>
       </div>
     </div>
   );
