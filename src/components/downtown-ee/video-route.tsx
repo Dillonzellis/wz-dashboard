@@ -1,7 +1,7 @@
 export default function VideoRoute() {
   return (
     <div className="flex flex-col items-center justify-center pt-12 md:pt-24">
-      <div className="pb-2 text-2xl font-semibold">Opitimized Route</div>
+      <div className="pb-2 text-2xl font-semibold">Optimized Route</div>
       <iframe
         width="327"
         height="582"
